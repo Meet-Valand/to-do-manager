@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: 23px;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  width: 100vh;
+  background-color: #ffcbabb5;
+}
+.impTask {
+  height: 45vh;
+  width: 60vh;
+  position: relative;
+  left: 96vh;
+  top: 5vh;
+  background-color: #f0e7de;
+  border-radius: 2.3vh;
+}
+.checkList {
+  height: 38vh;
+  width: 60vh;
+  position: relative;
+  left: 96vh;
+  top: 10vh;
+  background-color: #f0e7de;
+  border-radius: 2.3vh;
+}
+.todoContainer {
+  border-radius: 2.3vh;
+  background-color: #f0e7de;
+  position: relative;
+  left: 8vh;
+  top: -78vh;
+  height: 90vh;
+  width: 80vh;
+}
+.title {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+.todoContainer .title {
+  border-radius: 2.3vh;
+  background-color: #f0e7de;
+  position: relative;
+}
+.todoInput {
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  background: transparent;
+  width: 40vh;
+}
+.todoInput:focus {
+  outline: none;
+  border: none;
+  border-bottom: 0.3px solid black;
+}
+.todoCheckbox[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  top: 1vh;
+  margin-left: 2vh;
+  width: 3vh;
+  height: 3vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 25%;
+  cursor: pointer;
+}
+.todoCheckbox[type="checkbox"]:checked {
+  background-color: #ccc;
+  border: none;
+}
+.todoCheckbox[type="checkbox"]:checked::after {
+  content: "\2713";
+  color: #000000;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ol {
+  position: relative;
+  left: 7vh;
+  top: 2vh;
+  list-style-type: none;
+}
+ol li {
+  margin-bottom: 2.7vh;
+}
+.todoDate {
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  background: transparent;
+  cursor: text;
+  width: 15vh;
+}
+.todoDate:focus {
+  outline: none;
+  border: none;
+  border-bottom: 0.3px solid black;
+}
+.date {
+  position: relative;
+  top: 1vh;
+  margin-left: 4vh;
+}
+.todoDay {
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  background: transparent;
+  cursor: text;
+  width: 12vh;
+}
+.todoDay:focus {
+  outline: none;
+  border: none;
+  border-bottom: 0.3px solid black;
+}
+.day {
+  position: relative;
+  left: 60vh;
+  top: -2vh;
+}
+.todoInput1 {
+  width: 60vh;
+}
+.todoOl li {
+  margin-bottom: 3.6vh;
+}
+#textInput.strikethrough {
+  text-decoration: line-through;
+  border-bottom: none;
+}
